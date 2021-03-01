@@ -2,14 +2,14 @@ import React from "react"
 
 const Footer = () => {
   return (
-    <div>
+    <footer>
       <p>
         Copyright &copy; {new Date().getFullYear()} | Web Warrior{" "}
         <span role="img" aria-labelledby="web warrior">
           🐱‍👓
         </span>
       </p>
-    </div>
+    </footer>
   )
 }
 
