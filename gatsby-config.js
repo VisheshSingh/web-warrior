@@ -10,5 +10,14 @@ module.exports = {
     title: "Web Warrior",
     description: "A modern site built with Gatsby.js",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects/`,
+      },
+    },
+  ],
 }

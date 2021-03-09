@@ -9,3 +9,18 @@
   font-size: 2em;
   font-weight: 400;
 }
+.project {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+.project h3 {
+  text-align: center;
+  font-weight: 500;
+  margin: 20px auto 0;
+}
+.project p {
+  color: #ccc;
+  margin-top: 40px;
+}
