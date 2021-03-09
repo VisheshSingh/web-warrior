@@ -26,12 +26,13 @@ export default function projects({ data }) {
 
 export const getProjects = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         frontmatter {
           slug
           stack
           title
+          date
         }
         id
       }
